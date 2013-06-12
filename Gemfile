@@ -45,6 +45,15 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development do
+  gem 'rspec-rails', '2.11.0'
+  gem 'mysql2'
+end
+
+group :test do
+ gem 'capybara'
+end
+
 group :production do
   gem 'pg', '0.15.1'
 end
